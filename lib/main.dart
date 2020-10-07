@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:login/pages/login_page.dart';
 import 'package:login/pages/sign.dart';
 import 'package:login/pages/signUp.dart';
+import 'package:login/pages/tab_bar.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Dashboard(),
+      home: Tab_Bar(),
     );
   }
 }
