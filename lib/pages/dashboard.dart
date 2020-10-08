@@ -84,14 +84,14 @@ class _Dashboard1State extends State<Dashboard1> {
                               print('Card tapped.');
                             },
                             child: Container(
-                              width: 150,
-                              height: 100,
+                              width: ScreenConfig.blockWidth *35,
+                              height: ScreenConfig.blockHeight * 15,
                             child: Center(
                               child: Column(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
                                  // Icon(Icons.shopping_cart),
-                                   Image.asset('assets/images/shopping-cart.png', height: 50,width: 50,),
+                                   Image.asset('assets/images/shopping-cart.png', height: ScreenConfig.blockHeight * 9,width: ScreenConfig.blockWidth * 13,),
                                   Text("Shopping")
                                 ],
 
@@ -110,13 +110,13 @@ class _Dashboard1State extends State<Dashboard1> {
                               print('Card tapped.');
                             },
                             child: Container(
-                              width: 150,
-                              height: 100,
+                              width: ScreenConfig.blockWidth *35,
+                              height: ScreenConfig.blockHeight * 15,
                               child: Center(
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
-                                    Image.asset('assets/images/car-loan.png', height: 50,width: 50,),
+                                    Image.asset('assets/images/car-loan.png', height: ScreenConfig.blockHeight * 9,width: ScreenConfig.blockWidth * 13,),
                                     Text("Ubers")
                                   ],
 
@@ -142,13 +142,13 @@ class _Dashboard1State extends State<Dashboard1> {
                               print('Card tapped.');
                             },
                             child: Container(
-                              width: 150,
-                              height: 100,
+                              width: ScreenConfig.blockWidth *35,
+                              height: ScreenConfig.blockHeight * 15,
                               child: Center(
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
-                                    Image.asset('assets/images/groceries.png', height: 50,width: 50,),
+                                    Image.asset('assets/images/groceries.png',  height: ScreenConfig.blockHeight * 9,width: ScreenConfig.blockWidth * 13,),
                                     Text("Groceries")
                                   ],
 
@@ -167,13 +167,13 @@ class _Dashboard1State extends State<Dashboard1> {
                               print('Card tapped.');
                             },
                             child: Container(
-                              width: 150,
-                              height: 100,
+                              width: ScreenConfig.blockWidth *35,
+                              height: ScreenConfig.blockHeight * 15,
                               child: Center(
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
-                                    Image.asset('assets/images/heart.png', height: 50,width: 50,),
+                                    Image.asset('assets/images/heart.png',  height: ScreenConfig.blockHeight * 9,width: ScreenConfig.blockWidth * 13,),
                                     Text("Dates")
                                   ],
 
@@ -199,13 +199,13 @@ class _Dashboard1State extends State<Dashboard1> {
                               print('Card tapped.');
                             },
                             child: Container(
-                              width: 150,
-                              height: 100,
+                              width: ScreenConfig.blockWidth *35,
+                              height: ScreenConfig.blockHeight * 15,
                               child: Center(
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
-                                    Image.asset('assets/images/equalization.png', height: 50,width: 50,),
+                                    Image.asset('assets/images/equalization.png',  height: ScreenConfig.blockHeight * 9,width: ScreenConfig.blockWidth * 13,),
                                     Text("Stats")
                                   ],
 
@@ -224,13 +224,13 @@ class _Dashboard1State extends State<Dashboard1> {
                               print('Card tapped.');
                             },
                             child: Container(
-                              width: 150,
-                              height: 100,
+                              width: ScreenConfig.blockWidth *35,
+                              height: ScreenConfig.blockHeight * 15,
                               child: Center(
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
-                                    Image.asset('assets/images/card-payment.png', height: 50,width: 50,),
+                                    Image.asset('assets/images/card-payment.png',  height: ScreenConfig.blockHeight * 9,width: ScreenConfig.blockWidth * 13,),
                                     Text("Cards")
                                   ],
 
