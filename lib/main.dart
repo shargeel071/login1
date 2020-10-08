@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:login/pages/bounceButton.dart';
+import 'package:login/pages/json_practice.dart';
+import 'package:login/pages/layout.dart';
 import 'package:login/pages/login_page.dart';
 import 'package:login/pages/sign.dart';
 import 'package:login/pages/signUp.dart';
@@ -31,7 +34,7 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Tab_Bar(),
+      home: Home(),
     );
   }
 }

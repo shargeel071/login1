@@ -1,12 +1,42 @@
+import 'dart:convert';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 class Tab_Bar extends StatefulWidget {
   @override
   _Tab_BarState createState() => _Tab_BarState();
 }
 
+   apiCall() async {
+  var response = await http.get('http://demo0422020.mockable.io/');
+  print('this is response $response');
+  print('this is response body ${response.body}');
+  var parsedJson = json.decode(response.body);
+  print(parsedJson);
+   print(parsedJson['msg']);
+  var address= Address.fromJson(parsedJson);
+  address.books.forEach((element) {print('123 '+element);});
+
+
+ //    var jsonData= '{"name": "dane","alias": "FilledStack"}';
+ //    var parsedJson=jsonDecode(jsonData);
+ //    var user= User.fromJson(parsedJson);
+ //    print('${user.name} is ${user.alias}');
+
+  }
+
+
 class _Tab_BarState extends State<Tab_Bar> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    apiCall();
+  }
+
+  final List<String> names = <String>['Aby', 'Aish', 'Ayan', 'Ben', 'Bob', 'Charlie', 'Cook', 'Carline'];
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -27,8 +57,26 @@ class _Tab_BarState extends State<Tab_Bar> {
             new ListView(
               children: list,
             ),
-            Icon(Icons.directions_transit),
-            Icon(Icons.directions_bike),
+
+             ListView.builder(
+                padding: const EdgeInsets.all(8),
+                itemCount: names.length,
+                itemBuilder: (BuildContext context, int index) {
+                  return Container(
+                    height: 50,
+                    margin: EdgeInsets.all(2),
+
+                    child: Center(
+                        child: Text('${names[index]}',
+                          style: TextStyle(fontSize: 18),
+                        )
+                    ),
+                  );
+                }
+            ),
+
+
+          Icon(Icons.directions_bike),
           ],
         ),
       ),
@@ -128,3 +176,43 @@ color: Colors.blue[500],
     ),
   ),
 ];
+
+// class User{
+//   final String name;
+//   final String alias;
+//
+//   User(
+//   {
+//     this.name,
+//     this.alias,
+// }
+//       );
+//   User.fromJson(Map <String, dynamic> data)
+//
+//   :  name= data['name'],
+//     alias= data['alias'];
+//   }
+
+class Address {
+  final String msg;
+  final List<String> books;
+
+  Address({
+    this.msg,
+    this.books
+  });
+
+  factory Address.fromJson(Map<String, dynamic> parsedJson) {
+    var streetsFromJson  = parsedJson['books'];
+    //print(streetsFromJson.runtimeType);
+    // List<String> streetsList = new List<String>.from(streetsFromJson);
+     List<String> streetsList = streetsFromJson.cast<String>();
+    // streetsList.forEach((element) {print(element);});
+    return new Address(
+      msg: parsedJson['msg'],
+      books: streetsList,
+    );
+  }
+
+}
+

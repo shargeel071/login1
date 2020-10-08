@@ -182,32 +182,147 @@ class _DashboardState extends State<Dashboard> {
                 SizedBox(width: 20,),
                 Container(
                   width: 160.0,
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                    color: Colors.red,),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                   image: DecorationImage(image: AssetImage('assets/images/background.png'),
+                       fit: BoxFit.fill)
+                  ),
+                  child: Stack(
+                    children: <Widget>[
+                      Positioned(
+                          child: Container(
+                            child: Padding(
+                              padding: const EdgeInsets.only(top:150.0,left: 5),
+                              child: Text("Brand Name",style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold,fontSize: 20),),
+                            ),
+                          )
+                      ),
+                      Positioned(
+                          child: Container(
+                            child: Padding(
+                              padding: const EdgeInsets.only(top:175.0,left: 5),
+                              child: Text("150",style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold,fontSize: 15),),
+                            ),
+                          )
+                      )
+                    ],
+                  ),
                 ),
                 SizedBox(width: 20,),
                 Container(
                   width: 160.0,
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                    color: Colors.blue,),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      image: DecorationImage(image: AssetImage('assets/images/background.png'),
+                          fit: BoxFit.fill)
+                  ),
+                  child: Stack(
+                    children: <Widget>[
+                      Positioned(
+                          child: Container(
+                            child: Padding(
+                              padding: const EdgeInsets.only(top:150.0,left: 5),
+                              child: Text("Brand Name",style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold,fontSize: 20),),
+                            ),
+                          )
+                      ),
+                      Positioned(
+                          child: Container(
+                            child: Padding(
+                              padding: const EdgeInsets.only(top:175.0,left: 5),
+                              child: Text("150",style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold,fontSize: 15),),
+                            ),
+                          )
+                      )
+                    ],
+                  ),
                 ),
                 SizedBox(width: 20,),
                 Container(
                   width: 160.0,
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                    color: Colors.green,),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      image: DecorationImage(image: AssetImage('assets/images/background.png'),
+                          fit: BoxFit.fill)
+                  ),
+                  child: Stack(
+                    children: <Widget>[
+                      Positioned(
+                          child: Container(
+                            child: Padding(
+                              padding: const EdgeInsets.only(top:150.0,left: 5),
+                              child: Text("Brand Name",style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold,fontSize: 20),),
+                            ),
+                          )
+                      ),
+                      Positioned(
+                          child: Container(
+                            child: Padding(
+                              padding: const EdgeInsets.only(top:175.0,left: 5),
+                              child: Text("150",style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold,fontSize: 15),),
+                            ),
+                          )
+                      )
+                    ],
+                  ),
                 ),
                 SizedBox(width: 20,),
                 Container(
                   width: 160.0,
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                    color: Colors.yellow,),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      image: DecorationImage(image: AssetImage('assets/images/background.png'),
+                          fit: BoxFit.fill)
+                  ),
+                  child: Stack(
+                    children: <Widget>[
+                      Positioned(
+                          child: Container(
+                            child: Padding(
+                              padding: const EdgeInsets.only(top:150.0,left: 5),
+                              child: Text("Brand Name",style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold,fontSize: 20),),
+                            ),
+                          )
+                      ),
+                      Positioned(
+                          child: Container(
+                            child: Padding(
+                              padding: const EdgeInsets.only(top:175.0,left: 5),
+                              child: Text("150",style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold,fontSize: 15),),
+                            ),
+                          )
+                      )
+                    ],
+                  ),
                 ),
                 SizedBox(width: 20,),
                 Container(
                   width: 160.0,
-                  decoration: BoxDecoration(borderRadius: BorderRadius.circular(10),
-                    color: Colors.orange,),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      image: DecorationImage(image: AssetImage('assets/images/background.png'),
+                          fit: BoxFit.fill)
+                  ),
+                  child: Stack(
+                    children: <Widget>[
+                      Positioned(
+                          child: Container(
+                            child: Padding(
+                              padding: const EdgeInsets.only(top:150.0,left: 5),
+                              child: Text("Brand Name",style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold,fontSize: 20),),
+                            ),
+                          )
+                      ),
+                      Positioned(
+                          child: Container(
+                            child: Padding(
+                              padding: const EdgeInsets.only(top:175.0,left: 5),
+                              child: Text("150",style: TextStyle(color: Colors.red,fontWeight: FontWeight.bold,fontSize: 15),),
+                            ),
+                          )
+                      )
+                    ],
+                  ),
                 ),
                 SizedBox(width: 20,),
               ],
