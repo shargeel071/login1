@@ -212,7 +212,7 @@ class _Dashboard1State extends State<Dashboard1> {
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
                                     children: [
-                                      Image.asset('assets/images/card-payment.png', height: 50,width: 50,),
+                                      Image.asset('assets/images/card-payment  .png', height: 50,width: 50,),
                                       Text("Cards")
                                     ],
 
