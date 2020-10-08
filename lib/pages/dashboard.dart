@@ -20,7 +20,7 @@ class _Dashboard1State extends State<Dashboard1> {
         child: Stack(
           children: <Widget>[
             Container(
-              height: ScreenConfig.blockHeight * 37,
+              height: ScreenConfig.blockHeight * 43,
               decoration: BoxDecoration(
                 image: DecorationImage(image: AssetImage('assets/images/bgImage.jpg'),
                     fit: BoxFit.fill)
@@ -31,7 +31,7 @@ class _Dashboard1State extends State<Dashboard1> {
             Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                SizedBox(height: ScreenConfig.blockHeight * 5,),
+                SizedBox(height: ScreenConfig.blockHeight * 9,),
                 Center(
                   child: Container(
                       height: ScreenConfig.blockHeight * 10,
@@ -58,15 +58,16 @@ class _Dashboard1State extends State<Dashboard1> {
                     child: Text("Join us Oct 4,2020", style: TextStyle(color: Colors.white, fontSize: 10,),),
                   ),
                 ),
-                SizedBox(height: ScreenConfig.blockHeight * 1,),
+                SizedBox(height: ScreenConfig.blockHeight * 2,),
 
                 Container(
                   //margin: EdgeInsets.only(top: 10),
                     child: BounceButton(),
                 ),
-                SizedBox(height: ScreenConfig.blockHeight * 1,),
+                SizedBox(height: ScreenConfig.blockHeight * 4,),
                 Container(
                   height: ScreenConfig.blockHeight * 65,
+                  width: ScreenConfig.blockWidth * 90,
                   // width: 350,
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
@@ -126,6 +127,9 @@ class _Dashboard1State extends State<Dashboard1> {
                         ),
                       ],
                     ),
+                    SizedBox(
+                      height: ScreenConfig.blockHeight*1,
+                    ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -179,6 +183,9 @@ class _Dashboard1State extends State<Dashboard1> {
                           ),
                         ),
                       ],
+                    ),
+                    SizedBox(
+                      height: ScreenConfig.blockHeight*1,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -235,7 +242,8 @@ class _Dashboard1State extends State<Dashboard1> {
                       ],
                     ),
                   ],
-                ),),
+                ),
+                ),
 
               ],
             ),
